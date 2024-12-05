@@ -1,5 +1,5 @@
+import 'package:clean_architecture_riverpod/main/app.dart';
 import 'package:flutter/services.dart';
-import 'package:clean_architecture_riverpod/features/authentication/presentation/screens/login_screen.dart';
 import 'package:clean_architecture_riverpod/main/observers.dart';
 import 'dart:async';
 import 'package:flutter/material.dart';
@@ -17,19 +17,4 @@ Future<void> mainCommon() async {
   runApp(ProviderScope(observers: [
     Observers(),
   ], child: const MyApp()));
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Clean Architecture Riverpod',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: LoginScreen(),
-    );
-  }
 }
