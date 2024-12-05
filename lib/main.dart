@@ -16,5 +16,5 @@ Future<void> mainCommon() async {
 
   runApp(ProviderScope(observers: [
     Observers(),
-  ], child: const MyApp()));
+  ], child: MyApp()));
 }

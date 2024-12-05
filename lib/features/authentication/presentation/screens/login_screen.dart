@@ -1,9 +1,11 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:clean_architecture_riverpod/features/authentication/presentation/providers/auth_providers.dart';
 import 'package:clean_architecture_riverpod/features/authentication/presentation/providers/state/auth_state.dart';
 import 'package:clean_architecture_riverpod/features/authentication/presentation/widgets/auth_field.dart';
 
+@RoutePage()
 class LoginScreen extends ConsumerWidget {
   static const routeName = '/loginScreen';
 
